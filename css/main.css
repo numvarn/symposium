@@ -1104,7 +1104,8 @@
   padding: 11px 22px;
   cursor: pointer;
   background-color: #888;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+}
   .btn:hover, .btn:focus, .btn:active, .btn.active, .btn:active:focus, .btn:active:hover, .btn.active:focus, .btn.active:hover,
   .show > .btn.dropdown-toggle,
   .show > .btn.dropdown-toggle:focus,
@@ -1254,13 +1255,18 @@
     top: 1px; }
 
 .btn-primary {
-  background-color: #378C3F;
-  color: #FFFFFF; }
+  /* background-color: #378C3F; */
+  background-color: #e6c379;
+  /* color: #FFFFFF; */
+  color: #000000; 
+  font-weight: bold;
+}
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary.active:hover,
   .show > .btn-primary.dropdown-toggle,
   .show > .btn-primary.dropdown-toggle:focus,
   .show > .btn-primary.dropdown-toggle:hover {
-    background-color: #40a249;
+    /* background-color: #40a249; */
+    background-color: #be9d56;
     color: #FFFFFF;
     box-shadow: none; }
   .btn-primary:hover {
@@ -2321,10 +2327,13 @@ p {
 body {
   color: #2c2c2c;
   font-size: 14px;
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  /* font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif; */
+  font-family: 'Sarabun', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
-
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Prompt', sans-serif;
+}
 .main {
   position: relative;
   background: #FFFFFF; }
@@ -2500,7 +2509,10 @@ body {
   .navbar a {
     vertical-align: middle; }
     .navbar a:not(.btn):not(.dropdown-item) {
-      color: #FFFFFF; }
+      /* color: #FFFFFF; */
+      color: #000000; 
+      font-weight: bold;
+    }
   .navbar p {
     display: inline-block;
     margin: 0;
@@ -2598,7 +2610,9 @@ body {
   background-color: #888 !important; }
 
 .bg-primary {
-  background-color: #378C3F !important; }
+  /* background-color: #378C3F !important;  */
+  background-color: #e6c379 !important;
+}
 
 .bg-info {
   background-color: #2CA8FF !important; }
@@ -3593,11 +3607,14 @@ Created using IcoMoon - icomoon.io
 
 .profile-page .title {
   text-align: center;
-  margin-top: 30px; }
+  margin-top: 30px; 
+  color: #000;
+}
 
 .profile-page .description,
 .profile-page .category {
-  text-align: center; }
+  text-align: center; 
+}
 
 .profile-page h5.description {
   max-width: 700px;
@@ -3822,7 +3839,9 @@ Created using IcoMoon - icomoon.io
       max-width: 880px; }
   .page-header .category,
   .page-header .description {
-    color: rgba(255, 255, 255, 0.5); }
+    /* color: rgba(255, 255, 255, 0.5);  */
+    color: #000;
+  }
   .page-header.page-header-small {
     height: 60vh;
     max-height: 440px; }
@@ -3836,7 +3855,8 @@ Created using IcoMoon - icomoon.io
     top: 0;
     content: ""; }
   .page-header:before {
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.1); 
+  }
   .page-header[filter-color="orange"] {
     background: rgba(44, 44, 44, 0.2);
     /* For browsers that do not support gradients */
@@ -5118,12 +5138,12 @@ Created using IcoMoon - icomoon.io
 /* Body */
 /* Profile Page Background Style */
 .page-header {
-  background: rgba(44, 44, 44, 0.2);
+  /* background: rgba(255, 255, 255, 0); */
   /* For browsers that do not support gradients */
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6));
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); */
   /* Standard syntax */ }
   .page-header .btn {
     width: 140px; }
@@ -5156,7 +5176,7 @@ Created using IcoMoon - icomoon.io
   border: 15px solid rgba(55, 140, 63, 0.6);
   border-radius: 50%;
   height: 180px;
-  width: 180px;
+  width: 145px;
   position: absolute;
   left: 0;
   -webkit-animation: pulsate 1.6s ease-out;
@@ -5170,15 +5190,17 @@ Created using IcoMoon - icomoon.io
   position: relative;
   border-radius: 50%;
   height: 180px;
-  width: 180px;
+  /* width: 180px; */
   padding: 0;
   margin: 0;
   border: 15px solid transparent;
-  z-index: 9999;
-  transition: all .3s ease-out; }
+  /* z-index: 9999; */
+  /* transition: all .3s ease-out;  */
+}
 
 .cc-profile-image a:hover img {
-  transform: scale(1.06, 1.06); }
+  transform: scale(1.06, 1.06); 
+}
 
 .cc-profile-image a:hover:before {
   -webkit-animation: none;
@@ -5208,7 +5230,7 @@ Created using IcoMoon - icomoon.io
   padding-top: 60px;
   padding-right: 0;
   text-align: center;
-  color: #fff;
+  color: #000;
   text-transform: uppercase; }
 
 /* Education Style */
@@ -5219,7 +5241,7 @@ Created using IcoMoon - icomoon.io
   padding-top: 60px;
   padding-right: 0;
   text-align: center;
-  color: #fff; }
+  color: #000; }
 
 /* References Style */
 .cc-reference .card {
