@@ -3613,7 +3613,8 @@ Created using IcoMoon - icomoon.io
 
 .profile-page .description,
 .profile-page .category {
-  text-align: center; 
+  /* text-align: center;  */
+  text-align: left;
 }
 
 .profile-page h5.description {
